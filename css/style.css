@@ -1,0 +1,154 @@
+body {
+    margin: auto;
+    padding: 0;
+    height: auto;
+    width: 1440px;
+    font-family: 'Karla', sans-serif;
+}
+
+h1 {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: larger;
+}
+
+h2, p{
+    color: white;
+}
+
+.top-card {
+    background-color: whitesmoke;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+.top-card p {
+    color: hsl(218, 22%, 67%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    border-radius: 2%;
+    box-shadow: 4px 4px 4px 4px silver;
+    width: 700px;
+    height: auto;
+    display: grid;
+}
+
+#subtitle {
+    color: hsl(71, 73%, 54%);
+}
+
+.bottom-cards {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: hsl(179, 62%, 43%);
+    padding: 50px;
+    border-bottom-left-radius: 3%;
+}
+
+.right-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: hsl(179, 79%, 42%);
+    padding: 72px;
+    border-bottom-right-radius: 3%;
+}
+
+.right-card p {
+    margin: 2px;
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+.left-card #dollar {
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+#per-month {
+    color: lightgrey;
+}
+
+button {
+    padding: 10px 85px 10px 85px;
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    border-color: hsl(179, 62%, 43%);
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(71, 73%, 44%);
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        width: 390px;
+        height:100vh;
+        margin: auto;
+    }
+    p {
+        font-size: 16px;
+    }
+    h1,h2 {
+        font-size: 20px;
+    }
+    .container {
+        width: 390px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .top-card {
+        width: 390px;
+        border-top-right-radius: 0%;
+    }
+
+    .top-card p {
+        line-height: 20px;
+    }
+
+    .bottom-cards {
+        display: flex;
+        flex-direction: column;
+        width: 390px;
+    }
+
+    .left-card {
+        border-bottom-left-radius: 0%;
+    }
+
+    .right-card {
+        border-bottom-right-radius: 0%;
+    }
+
+    button {
+        padding: 10px 100px 10px 100px;
+    }
+}
